@@ -5,9 +5,20 @@
   "main": "dist/uws.js",
   "repository": "https://github.com/uNetworking/uWebSockets.js.git",
   "author": "https://github.com/alexhultman",
-  "license": "Apache License 2.0",
+  "license": "Apache-2.0",
   "private": false,
   "scripts": {
-    "postinstall": "make build && ./build"
+    "clone:sockets": "stat uSockets || git clone https://github.com/uNetworking/uSockets --depth 1",
+    "clone:uws": "stat uWebSockets || git clone https://github.com/uNetworking/uWebSockets --depth 1",
+    "clone": "yarn clone:uws && yarn clone:sockets",
+    "make:sockets": "cd ./uSockets && make && cd ..",
+    "make:uws": "cd ./uWebSockets/ && make && cd ..",
+    "make": "yarn make:sockets && yarn make:uws",
+    "patch:gpp": "sed -i s/clang++/g++/g `find . -name Makefile`",
+    "patch:gcc": "sed -i s/clang/gcc/g `find . -name Makefile`",
+    "patch:copy": "cd ./uWebSockets/ && rm -rf ./uSockets/ && ln -s ../uSockets/ && cd ..",
+    "patch": "yarn patch:gpp && yarn patch:gcc && yarn patch:copy",
+    "build": "make build && ./build",
+    "postinstall": "yarn clone && yarn patch && yarn build"
   }
 }
