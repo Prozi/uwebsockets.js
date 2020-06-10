@@ -48,7 +48,7 @@ Being written in native code directly targeting the Linux kernel makes it way fa
 
 ![](misc/chart.png)
 
-* Install with `npm install uNetworking/uWebSockets.js#v18.1.0` or any such release. No compiler needed.
+* Install with `yarn add uwebsockets.js`. No compiler needed.
 
 ### :briefcase: Commercially supported
 <a href="https://github.com/uNetworking">uNetworking AB</a> is a Swedish consulting & contracting company dealing with anything related to µWebSockets; development, support and customer success.
