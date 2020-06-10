@@ -2,6 +2,15 @@
   "name": "uwebsockets.js",
   "version": "v18.1.0",
   "description": "https://github.com/uNetworking/uWebSockets.js",
+  "keywords": [
+    "uwebsockets.js",
+    "uwebsockets",
+    "websockets",
+    "nodejs",
+    "javascript",
+    "fastestn",
+    "c++"
+  ],
   "main": "dist/uws.js",
   "repository": "https://github.com/uNetworking/uWebSockets.js.git",
   "author": "https://github.com/alexhultman",
