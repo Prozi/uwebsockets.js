@@ -3,6 +3,7 @@
 <i>Simple, secure</i><sup><a href="https://github.com/uNetworking/uWebSockets/tree/master/fuzzing#fuzz-testing-of-various-parsers-and-mocked-examples">[1]</a></sup><i> & standards compliant</i><sup><a href="https://unetworking.github.io/uWebSockets.js/report.pdf">[2]</a></sup><i> web server for the most demanding</i><sup><a href="https://github.com/uNetworking/uWebSockets/tree/master/benchmarks#benchmark-driven-development">[3]</a></sup><i> of applications.</i> <a href="https://github.com/uNetworking/uWebSockets/blob/master/misc/READMORE.md">Read more...</a>
 <br><br>
 
+[![uwebsockets.js](https://circleci.com/gh/Prozi/uwebsockets.js.svg?style=shield)](https://circleci.com/gh/Prozi/uwebsockets.js)
 
 <a href="https://github.com/uNetworking/uWebSockets.js/releases"><img src="https://img.shields.io/github/v/release/uNetworking/uWebSockets.js"></a> <a href="https://lgtm.com/projects/g/uNetworking/uWebSockets.js/context:cpp"><img alt="Language grade: C/C++" src="https://img.shields.io/lgtm/grade/cpp/g/uNetworking/uWebSockets.js.svg?logo=lgtm&logoWidth=18"/></a> <img src="https://img.shields.io/badge/downloads-50,000,000+-green" />
 
@@ -15,31 +16,27 @@
 
 ```javascript
 /* Non-SSL is simply App() */
-require('uWebSockets.js').SSLApp({
-
-  /* There are tons of SSL options */
-  key_file_name: 'misc/key.pem',
-  cert_file_name: 'misc/cert.pem',
-  
-}).ws('/*', {
-
-  /* For brevity we skip the other events */
-  message: (ws, message, isBinary) => {
-    let ok = ws.send(message, isBinary);
-  }
-  
-}).any('/*', (res, req) => {
-
-  /* Let's deny all Http */
-  res.end('Nothing to see here!');
-  
-}).listen(9001, (listenSocket) => {
-
-  if (listenSocket) {
-    console.log('Listening to port 9001');
-  }
-  
-});
+require("uWebSockets.js")
+  .SSLApp({
+    /* There are tons of SSL options */
+    key_file_name: "misc/key.pem",
+    cert_file_name: "misc/cert.pem",
+  })
+  .ws("/*", {
+    /* For brevity we skip the other events */
+    message: (ws, message, isBinary) => {
+      let ok = ws.send(message, isBinary);
+    },
+  })
+  .any("/*", (res, req) => {
+    /* Let's deny all Http */
+    res.end("Nothing to see here!");
+  })
+  .listen(9001, (listenSocket) => {
+    if (listenSocket) {
+      console.log("Listening to port 9001");
+    }
+  });
 ```
 
 ### :muscle: Unfair advantage
@@ -48,9 +45,10 @@ Being written in native code directly targeting the Linux kernel makes it way fa
 
 ![](misc/chart.png)
 
-* Install with `yarn add uwebsockets.js`. No compiler needed.
+- Install with `yarn add uwebsockets.js`. No compiler needed.
 
 ### :briefcase: Commercially supported
+
 <a href="https://github.com/uNetworking">uNetworking AB</a> is a Swedish consulting & contracting company dealing with anything related to µWebSockets; development, support and customer success.
 
 Don't hesitate <a href="mailto:alexhultman@gmail.com">sending a mail</a> if you're building something large, in need of advice or having other business inquiries in mind. We'll figure out what's best for both parties and make sure you're not stepping into one of the many common pitfalls.
@@ -59,4 +57,4 @@ Special thanks to BitMEX, Bitfinex, Google, Coinbase, Bitwyre and deepstreamHub 
 
 <img src="https://github.com/uNetworking/uWebSockets/raw/master/misc/2018.png" />
 
-* µWebSockets.js is the Node.js binding to µWebSockets. Read more over at [µWebSockets](https://github.com/uNetworking/uWebSockets).
+- µWebSockets.js is the Node.js binding to µWebSockets. Read more over at [µWebSockets](https://github.com/uNetworking/uWebSockets).

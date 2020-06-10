@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+ar "$1" --plugin=/usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so ${@:2}

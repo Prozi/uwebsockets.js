@@ -12,22 +12,14 @@
     "c++"
   ],
   "main": "dist/uws.js",
-  "repository": "https://github.com/uNetworking/uWebSockets.js.git",
+  "repository": "https://github.com/Prozi/uwebsockets.js.git",
   "author": "https://github.com/alexhultman",
   "license": "Apache-2.0",
   "private": false,
   "scripts": {
-    "test": "node -e \"require('./dist/uws.js').App() && process.exit(0);\" && echo ok",
-    "clone:sockets": "stat uSockets || git clone https://github.com/uNetworking/uSockets --depth 1",
-    "clone:uws": "stat uWebSockets || git clone https://github.com/uNetworking/uWebSockets --depth 1",
-    "clone": "yarn clone:uws && yarn clone:sockets",
-    "make:sockets": "cd ./uSockets/ && make && cd ..",
-    "make:uws": "cd ./uWebSockets/ && make && cd ..",
-    "make": "yarn make:sockets && yarn make:uws",
-    "patch:gpp": "sed -i s/clang++/g++/g `find . -name Makefile`",
-    "patch:gcc": "sed -i s/clang/gcc/g `find . -name Makefile`",
-    "patch:copy": "rm -rf ./uWebSockets/uSockets && ln -s ../uSockets ./uWebSockets/",
-    "build": "make build && ./build",
-    "postinstall": "yarn clone && yarn make:sockets && yarn patch:copy && yarn build"
-  }
+    "test": "node -v && node -e \"const uws = require('./dist/uws.js'); console.log(uws); uws.App() && process.exit(0);\" && echo ok",
+    "build": ".bin/clone uWebSockets && cd uWebSockets && ../.bin/clone uSockets && cd .. && .bin/make",
+    "postinstall": "yarn build"
+  },
+  "dependencies": {}
 }
