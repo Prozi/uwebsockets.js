@@ -1,0 +1,13 @@
+{
+  "name": "uwebsockets.js",
+  "version": "v18.1.0",
+  "description": "https://github.com/uNetworking/uWebSockets.js",
+  "main": "dist/uws.js",
+  "repository": "https://github.com/uNetworking/uWebSockets.js.git",
+  "author": "https://github.com/alexhultman",
+  "license": "Apache License 2.0",
+  "private": false,
+  "scripts": {
+    "postinstall": "make build && ./build"
+  }
+}
