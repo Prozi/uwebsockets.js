@@ -25,7 +25,7 @@
     "make": "yarn make:sockets && yarn make:uws",
     "patch:gpp": "sed -i s/clang++/g++/g `find . -name Makefile`",
     "patch:gcc": "sed -i s/clang/gcc/g `find . -name Makefile`",
-    "patch:copy": "cd ./uWebSockets/ && rm -rf ./uSockets/ && ln -s ../uSockets/ && cd ..",
+    "patch:copy": "rm -rf ./uWebSockets/uSockets && ln -s ../uSockets ./uWebSockets/",
     "build": "make build && ./build",
     "postinstall": "yarn clone && yarn patch:copy && yarn build"
   }
