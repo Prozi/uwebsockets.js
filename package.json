@@ -18,7 +18,7 @@
   "private": false,
   "scripts": {
     "test": "node -v && node -e \"const uws = require('./dist/uws.js'); console.log(uws); uws.App() && process.exit(0);\" && echo ok",
-    "build": ".bin/clone uWebSockets && cd uWebSockets && ../.bin/clone uSockets && cd .. && .bin/make",
+    "build": "sh/clone uWebSockets && cd uWebSockets && ../sh/clone uSockets && cd .. && sh/make",
     "postinstall": "yarn build"
   },
   "dependencies": {}
