@@ -1,7 +1,7 @@
 {
   "name": "uwebsockets.js",
-  "version": "v18.1.7",
-  "description": "https://github.com/uNetworking/uWebSockets.js",
+  "version": "v18.1.8",
+  "description": "micro websockets npm package fork of: https://github.com/uNetworking/uWebSockets.js",
   "keywords": [
     "uwebsockets.js",
     "uwebsockets",
