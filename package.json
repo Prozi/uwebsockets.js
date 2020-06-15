@@ -1,6 +1,6 @@
 {
   "name": "uwebsockets.js",
-  "version": "v18.1.8",
+  "version": "v18.1.9",
   "description": "micro websockets npm package fork of: https://github.com/uNetworking/uWebSockets.js",
   "keywords": [
     "uwebsockets.js",
@@ -17,11 +17,9 @@
   "license": "Apache-2.0",
   "private": false,
   "scripts": {
-    "test": "node -v && node -e \"const uws = require('./dist/uws.js'); console.log(uws); uws.App() && process.exit(0);\" && echo ok",
-    "clone:step1": "bash ./bash/clone uWebSockets",
-    "clone:step2": "cd uWebSockets && bash ../bash/clone uSockets && cd ..",
-    "make": "bash ./bash/make",
-    "postinstall": "yarn clone:step1 && yarn clone:step2 && yarn make"
+    "test": "node -v && node -e \"const uws = require('./dist/uws.js'); console.log(uws); uws.App() && process.exit(0);\" && echo ok"
   },
-  "dependencies": {}
+  "dependencies": {
+    "uWebSockets.js": "https://github.com/uNetworking/uWebSockets.js#18.1.0"
+  }
 }
