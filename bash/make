@@ -12,4 +12,3 @@ export AR=$BIN/gcc_ar
 make build
 
 ./build
-

@@ -18,8 +18,10 @@
   "private": false,
   "scripts": {
     "test": "node -v && node -e \"const uws = require('./dist/uws.js'); console.log(uws); uws.App() && process.exit(0);\" && echo ok",
-    "build": "sh/clone uWebSockets && cd uWebSockets && ../sh/clone uSockets && cd .. && sh/make",
-    "postinstall": "yarn build"
+    "clone:step1": "bash ./bash/clone uWebSockets",
+    "clone:step2": "cd uWebSockets && bash ../bash/clone uSockets && cd ..",
+    "make": "bash ./bash/make",
+    "postinstall": "yarn clone:step1 && yarn clone:step2 && yarn make"
   },
   "dependencies": {}
 }
