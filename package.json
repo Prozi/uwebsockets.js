@@ -1,25 +1,33 @@
 {
   "name": "uwebsockets.js",
-  "version": "v18.1.9",
+  "version": "v18.1.10",
   "description": "micro websockets npm package fork of: https://github.com/uNetworking/uWebSockets.js",
   "keywords": [
-    "uwebsockets.js",
-    "uwebsockets",
-    "websockets",
-    "nodejs",
     "javascript",
-    "fastestn",
+    "nodejs",
+    "websockets",
+    "uwebsockets",
+    "uwebsockets.js",
+    "fastest",
     "c++"
   ],
   "main": "dist/uws.js",
   "repository": "https://github.com/Prozi/uwebsockets.js.git",
   "author": "https://github.com/alexhultman",
+  "maintainers": [
+    "https://github.com/Prozi"
+  ],
   "license": "Apache-2.0",
   "private": false,
   "scripts": {
-    "test": "node -v && node -e \"const uws = require('./dist/uws.js'); console.log(uws); uws.App() && process.exit(0);\" && echo ok"
+    "test": "node tests/Hammer.js && node tests/Fuzz.js"
   },
   "dependencies": {
     "uWebSockets.js": "https://github.com/uNetworking/uWebSockets.js#18.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "ws": "^7.3.0",
+    "wstest": "^1.0.0"
   }
 }

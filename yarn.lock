@@ -2,6 +2,21 @@
 # yarn lockfile v1
 
 
+prettier@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.5.tgz#d6d56282455243f2f92cc1716692c08aa31522d4"
+  integrity sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
+
 "uWebSockets.js@https://github.com/uNetworking/uWebSockets.js#18.1.0":
   version "18.1.0"
   resolved "https://github.com/uNetworking/uWebSockets.js#aca45709610cf42392f944230b38ff1f32c4c378"
+
+ws@^7.3.0:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.3.0.tgz#4b2f7f219b3d3737bc1a2fbf145d825b94d38ffd"
+  integrity sha512-iFtXzngZVXPGgpTlP1rBqsUK82p9tKqsWRPg5L56egiljujJT3vGAYnHANvFxBieXrTFavhzhxW52jnaWV+w2w==
+
+wstest@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/wstest/-/wstest-1.0.0.tgz#f483a004ccd77b21f18c1933058c6a8e343ccca2"
+  integrity sha1-9IOgBMzXeyHxjBkzBYxqjjQ8zKI=
