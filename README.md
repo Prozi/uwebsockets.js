@@ -1,4 +1,4 @@
-<center>
+<div style="text-align: center;">
   <img src="https://github.com/Prozi/uwebsockets.js/raw/master/misc/logo-flat.svg" height="180" />
   
   <br/>
@@ -7,8 +7,6 @@
   <i> & standards compliant</i><sup><a href="https://unetworking.github.io/uWebSockets.js/report.pdf">[2]</a></sup>
   <i> web server for the most demanding</i><sup><a href="https://github.com/Prozi/uwebsockets/tree/master/benchmarks#benchmark-driven-development">[3]</a></sup>
   <i> of applications.</i> <a href="https://github.com/Prozi/uwebsockets/blob/master/misc/READMORE.md">Read more...</a>
-
-  <br/>
 
 <a href="https://lgtm.com/projects/g/uNetworking/uWebSockets.js/context:cpp?style=flat-square"><img alt="Language grade: C/C++" src="https://img.shields.io/lgtm/grade/cpp/g/uNetworking/uWebSockets.js.svg?logo=lgtm&logoWidth=18?style=flat-square"/></a>
 <a href="https://lgtm.com/projects/g/Prozi/uwebsockets.js/context:javascript?style=flat-square"><img alt="Language grade: javascript" src="https://img.shields.io/lgtm/grade/javascript/g/Prozi/uwebsockets.js.svg?logo=lgtm&logoWidth=18?style=flat-square"/></a>
@@ -22,7 +20,7 @@
 <a href="https://onury.io/docma"><img src="https://img.shields.io/badge/docs%20by-docma-c27cf4.svg?docs%20by=docma&style=flat-square" alt="documentation" /></a>
 <a href="https://circleci.com/gh/Prozi/uwebsockets.js" alt="circleci"><img src="https://circleci.com/gh/Prozi/uwebsockets.js.svg?style=shield" alt="passing" /></a>
 
-</center>
+</div>
 
 ### 💡 Familiar face
 

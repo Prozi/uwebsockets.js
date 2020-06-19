@@ -8191,7 +8191,18 @@ var docma = Object.freeze(
           animations: true,
           menu: [
             { label: "µWebSockets.js", href: "home" },
-            { label: "µWebSockets.js API", href: "api" },
+            {
+              label: "µWebSockets.js API",
+              items: [
+                { label: "basic api", href: "api" },
+                {
+                  label: "original repo api docs",
+                  href:
+                    "https://unetworking.github.io/uWebSockets.js/generated/",
+                },
+              ],
+              chevron: true,
+            },
             {
               iconClass: "fas fa-cloud-download-alt",
               label: "Download",

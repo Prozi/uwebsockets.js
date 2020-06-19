@@ -80,7 +80,16 @@
           },
           {
             "label": "µWebSockets.js API",
-            "href": "api"
+            "items": [
+              {
+                "label": "basic api",
+                "href": "api"
+              },
+              {
+                "label": "original repo api docs",
+                "href": "https://unetworking.github.io/uWebSockets.js/generated/"
+              }
+            ]
           },
           {
             "iconClass": "fas fa-cloud-download-alt",
