@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="misc/logo-flat.svg" height="180" />
+  <img src="https://github.com/Prozi/uwebsockets.js/raw/master/misc/logo-flat.svg" height="180" />
   
   <br/>
   
@@ -20,7 +20,7 @@
 <a href="https://david-dm.org/Prozi/uwebsockets.js"><img src="https://david-dm.org/Prozi/uwebsockets.js.svg?style=flat-square" alt="dependencies" /></a>
 <a href="https://github.com/Prozi/uwebsockets.js/graphs/commit-activity"><img src="https://img.shields.io/maintenance/yes/2020.svg?style=flat-square" alt="maintained" /></a>
 <a href="https://onury.io/docma"><img src="https://img.shields.io/badge/docs%20by-docma-c27cf4.svg?docs%20by=docma&style=flat-square" alt="documentation" /></a>
-<a href="https://circleci.com/gh/Prozi/uwebsockets.js" alt="circleci"><img src="https://circleci.com/gh/Prozi/uwebsockets.js.svg?style=shield" alt="passing" />
+<a href="https://circleci.com/gh/Prozi/uwebsockets.js" alt="circleci"><img src="https://circleci.com/gh/Prozi/uwebsockets.js.svg?style=shield" alt="passing" /></a>
 
 </div>
 
@@ -57,7 +57,7 @@ require("uwebsockets.js")
 
 Being written in native code directly targeting the Linux kernel makes it way faster than any JavaScript implementation:
 
-<img src="misc/chart.png" />
+<img src="https://github.com/Prozi/uwebsockets.js/raw/master/misc/chart.png" />
 
 - Install with `yarn add uwebsockets.js --save`. No compiler needed.
 
@@ -73,4 +73,4 @@ Special thanks to BitMEX, Bitfinex, Google, Coinbase, Bitwyre and deepstreamHub 
 
 - µWebSockets.js is the Node.js binding to µWebSockets. Read more over at [µWebSockets](https://github.com/Prozi/uwebsockets).
 
-<img src="misc/features_strip.png" />
+<img src="https://github.com/Prozi/uwebsockets.js/raw/master/misc/features_strip.png" />

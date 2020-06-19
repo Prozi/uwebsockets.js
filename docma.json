@@ -116,6 +116,7 @@
     }
   },
   "src": [
+    "./dist/uws.js",
     "./node_modules/uWebSockets.js/index.d.ts",
     {
       "license": "./LICENSE:md"
