@@ -1,13 +1,19 @@
 {
   "name": "uwebsockets.js",
-  "version": "v18.1.10",
-  "description": "micro websockets npm package fork of: https://github.com/uNetworking/uWebSockets.js",
+  "version": "v18.1.11",
+  "description": "µwebsockets.js npm package fork of: https://github.com/uNetworking/uWebSockets.js",
   "keywords": [
     "javascript",
     "nodejs",
     "websockets",
+    "websockets.js",
     "uwebsockets",
     "uwebsockets.js",
+    "express",
+    "socket.io",
+    "alternative",
+    "fast",
+    "faster",
     "fastest",
     "c++"
   ],
@@ -26,6 +32,8 @@
     "uWebSockets.js": "https://github.com/uNetworking/uWebSockets.js#18.1.0"
   },
   "devDependencies": {
+    "@jacekpietal/docma": "^3.2.9",
+    "cross-spawn": "^7.0.3",
     "prettier": "^2.0.5",
     "ws": "^7.3.0",
     "wstest": "^1.0.0"

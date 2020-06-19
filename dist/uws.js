@@ -15,5 +15,31 @@
  * limitations under the License.
  */
 
-module.exports = require('uWebSockets.js');
+let { platform, arch, versions } = process;
+let version = [platform, arch, versions.modules].join("_");
+let uWebSockets;
 
+try {
+  console.log(`Loading µWS version: ${version}`);
+  uWebSockets = require(`uWebSockets.js/uws_${version}.node`);
+
+  if (process.env.EXPERIMENTAL_FASTCALL) {
+    process.nextTick = (f, ...args) => {
+      Promise.resolve().then(() => {
+        f(...args);
+      });
+    };
+  }
+
+  process.on("exit", () => {
+    uWebSockets.free();
+    uWebSockets = null;
+  });
+} catch (e) {
+  throw new Error(
+    `This version: ${version} of µWS is not compatible with your Node.js build:` +
+      e.stack,
+  );
+}
+
+module.exports = uWebSockets;
