@@ -6,7 +6,7 @@
   <i>Simple, secure</i><sup><a href="https://github.com/Prozi/uwebsockets/tree/master/fuzzing#fuzz-testing-of-various-parsers-and-mocked-examples?style=flat-square">[1]</a></sup>
   <i> & standards compliant</i><sup><a href="https://unetworking.github.io/uWebSockets.js/report.pdf">[2]</a></sup>
   <i> web server for the most demanding</i><sup><a href="https://github.com/Prozi/uwebsockets/tree/master/benchmarks#benchmark-driven-development">[3]</a></sup>
-  <i> of applications.</i> <a href="https://github.com/Prozi/uwebsockets/blob/master/misc/READMORE.md">Read more...</a>
+  <i> of applications.</i> <a href="https://github.com/uNetWorking/uWebsockets/blob/master/misc/READMORE.md">Read more...</a>
 
 <a href="https://lgtm.com/projects/g/uNetworking/uWebSockets.js/context:cpp?style=flat-square"><img alt="Language grade: C/C++" src="https://img.shields.io/lgtm/grade/cpp/g/uNetworking/uWebSockets.js.svg?logo=lgtm&logoWidth=18?style=flat-square"/></a>
 <a href="https://lgtm.com/projects/g/Prozi/uwebsockets.js/context:javascript?style=flat-square"><img alt="Language grade: javascript" src="https://img.shields.io/lgtm/grade/javascript/g/Prozi/uwebsockets.js.svg?logo=lgtm&logoWidth=18?style=flat-square"/></a>
@@ -75,6 +75,6 @@ Special thanks to BitMEX, Bitfinex, Google, Coinbase, Bitwyre and deepstreamHub 
 
 <img src="https://github.com/uNetworking/uWebSockets/raw/master/misc/2018.png" />
 
-- µWebSockets.js is the Node.js binding to µWebSockets. Read more over at [µWebSockets](https://github.com/Prozi/uwebsockets).
+- µWebSockets.js is the Node.js binding to µWebSockets. Read more over at [µWebSockets](https://github.com/uNetWorking/uWebsockets/blob/master/misc/READMORE.md).
 
 <img src="https://github.com/Prozi/uwebsockets.js/raw/master/misc/features_strip.png" />
