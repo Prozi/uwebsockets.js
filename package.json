@@ -1,6 +1,6 @@
 {
   "name": "uwebsockets.js",
-  "version": "v18.1.11",
+  "version": "v18.1.12",
   "description": "µwebsockets.js npm package fork of: https://github.com/uNetworking/uWebSockets.js",
   "keywords": [
     "javascript",
