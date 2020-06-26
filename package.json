@@ -1,6 +1,6 @@
 {
   "name": "uwebsockets.js",
-  "version": "v18.3.2",
+  "version": "v18.3.3",
   "description": "µwebsockets.js npm package fork of: https://github.com/uNetworking/uWebSockets.js",
   "keywords": [
     "javascript",
@@ -33,7 +33,7 @@
     "test": "node tests/Hammer.js && node tests/Fuzz.js"
   },
   "dependencies": {
-    "uWebSockets.js": "https://github.com/uNetworking/uWebSockets.js#v18.3.0"
+    "uws.js": "https://github.com/uNetworking/uWebSockets.js#v18.3.0"
   },
   "devDependencies": {
     "@jacekpietal/docma": "^3.2.12",
