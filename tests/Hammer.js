@@ -148,7 +148,7 @@ function performRandomServerAction(ws, uniform) {
 }
 
 const app = uWS
-  ./*SSL*/ App({
+  .App({
     key_file_name: "misc/key.pem",
     cert_file_name: "misc/cert.pem",
     passphrase: "1234",

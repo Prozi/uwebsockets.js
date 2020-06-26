@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Prozi/uwebsockets.js/raw/master/misc/logo-flat.svg" height="180" />
+  <img alt="µwebsockets.js" src="https://github.com/Prozi/uwebsockets.js/raw/master/misc/logo-flat.svg" height="180" />
 </p>  
   
 <p align="center">
