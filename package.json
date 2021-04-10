@@ -1,6 +1,6 @@
 {
   "name": "uwebsockets.js",
-  "version": "v18.3.3",
+  "version": "v19.0.0",
   "description": "µwebsockets.js npm package fork of: https://github.com/uNetworking/uWebSockets.js",
   "keywords": [
     "javascript",
@@ -33,16 +33,20 @@
     "test": "node tests/Hammer.js && node tests/Fuzz.js"
   },
   "dependencies": {
-    "uws.js": "https://github.com/uNetworking/uWebSockets.js#v18.3.0"
+    "uws.js": "https://github.com/uNetworking/uWebSockets.js#v19.0.0"
   },
   "devDependencies": {
-    "@jacekpietal/docma": "^3.2.12",
+    "@jacekpietal/docma": "^3.3.3",
     "cross-spawn": "^7.0.3",
-    "eslint": "^7.3.1",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.0.5",
-    "ws": "^7.3.0",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1",
+    "ws": "^7.4.4",
     "wstest": "^1.0.0"
+  },
+  "resolutions": {
+    "clean-css": "^4.1.11",
+    "braces": "^2.3.1"
   }
 }
